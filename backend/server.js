@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require("uuid");
 const app = express();
 app.use (cors(
   {
-    origin:["https://deploy.mern-1whq.vercel.app"],
+    origin:[""],
     methods;["POST","GET"],
     credentials:true
 }
