@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./ProjectManager.css";
-
+import axios from 'axios'
 const ProjectManager = ({ apiUrl }) => {
   const [projects, setProjects] = useState([]);
   const [newProject, setNewProject] = useState("");
@@ -8,7 +8,13 @@ const ProjectManager = ({ apiUrl }) => {
   const [projectCount, setProjectCount] = useState(0);
   const [editingProject, setEditingProject] = useState(null);
   const [editedName, setEditedName] = useState("");
-
+  axios.defaults.withCredentials =true;
+ const handleSubmit = (e) =>{
+ e.preventDefault();
+   axios.post('https://iad-project-manager.vercel.app/register',{name,email,password})
+   .then(result=> console.log(result))
+   .catch(err => console.log(err))
+ }
   // Fetch projects & count
   const fetchProjects = async () => {
     try {
