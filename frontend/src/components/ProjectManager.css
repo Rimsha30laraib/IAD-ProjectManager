@@ -1,0 +1,78 @@
+.project-manager {
+    width: 500px;
+    max-height: 800px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Optional */
+  }
+  
+  /* Center the box in the middle of the screen */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  .project-manager h2 {
+    color: #333;
+  }
+  
+  .project-manager input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .project-manager button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .project-manager button:hover {
+    background-color: #0056b3;
+  }
+  
+  .project-manager ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-manager li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .project-manager li button {
+    background-color: #dc3545;
+  }
+  
+  .project-manager li button:hover {
+    background-color: #b52b3a;
+  }
+  
+  .project-manager p {
+    color: red;
+    font-weight: bold;
+  }
+  
