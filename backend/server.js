@@ -5,9 +5,8 @@ const { v4: uuidv4 } = require("uuid");
 const app = express();
 app.use(cors(
   {
-    origin:["https://iad-project-manager-fumy.vercel.app/"],
-    methods:["POST","GET","PUT","DELETE"],
-    credentials:true
+    origin:["*"],
+    methods:["POST","GET","PUT","DELETE"]
   }
 ));
 const PORT = process.env.PORT || 5000;
@@ -15,10 +14,9 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 
-let projects = [];
-app.get("/", (req, res) => {
-  res.json("hello");
-});
+let projects = [{ id: uuidv4(), name: "Portfolio" },
+  { id: uuidv4(), name: "News app" }];
+
 app.get("/api/projects", (req, res) => {
   res.json({ status: "success", projects });
 });
