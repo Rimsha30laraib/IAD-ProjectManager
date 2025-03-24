@@ -75,12 +75,22 @@ body, html {
 
 /* Delete Button */
 .project-manager button.delete {
-  background: #ff6b6b; /* Light Red */
+  background: hsl(112, 70%, 54%); /* Red */
   color: white;
 }
 
 .project-manager button.delete:hover {
-  background: #e63946;
+  background:hsl(112, 70%, 54%);
+}
+
+/* Edit Button */
+.project-manager button.edit {
+  background: #dc3545; /* Red */
+  color: white;
+}
+
+.project-manager button.edit:hover {
+  background: #c82333;
 }
 
 /* List Styles */
