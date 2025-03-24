@@ -3,13 +3,7 @@ const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
 
 const app = express();
-app.use (cors(
-  {
-    origin:[""],
-    methods;["POST","GET"],
-    credentials:true
-}
-));
+
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
