@@ -16,7 +16,9 @@ app.use(express.json());
 app.use(cors());
 
 let projects = [];
-
+app.get("/", (req, res) => {
+  res.json("hello");
+});
 app.get("/api/projects", (req, res) => {
   res.json({ status: "success", projects });
 });
