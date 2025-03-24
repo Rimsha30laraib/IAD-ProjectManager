@@ -31,8 +31,9 @@
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #080808;
     border-radius: 5px;
+    color: #080808;
   }
   
   .project-manager button {
@@ -75,4 +76,3 @@
     color: red;
     font-weight: bold;
   }
-  
