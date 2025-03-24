@@ -4,9 +4,8 @@ const { v4: uuidv4 } = require("uuid");
 
 const app = express();
 app.use(cors({
-    origin: ["*"], // Change this to match your frontend URL
+    origin: "*", // Change this to match your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type']
 }));
 const PORT = process.env.PORT || 5000;
 
