@@ -3,12 +3,11 @@ const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
 
 const app = express();
-app.use(cors(
-  {
-    origin:["*"],
-    methods:["POST","GET","PUT","DELETE"]
-  }
-));
+app.use(cors({
+  origin: 'https://iad-project-manager.vercel.app/', // Change this to match your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}));
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
