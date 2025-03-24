@@ -8,7 +8,7 @@ const ProjectManager = ({ apiUrl }) => {
   const [projectCount, setProjectCount] = useState(0);
   const [editingProject, setEditingProject] = useState(null);
   const [editedName, setEditedName] = useState("");
-
+  
   // Fetch projects & count
   const fetchProjects = async () => {
     try {
